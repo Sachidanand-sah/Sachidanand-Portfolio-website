@@ -2,7 +2,7 @@
 
 Personal portfolio of a Frontend React Developer, built with **React 18 + Vite**.
 
-🔗 **Live:** https://sachidanand-sah.github.io/Sachidanand-Portfolio-website/
+🔗 **Live:** https://sachidanand-portfolio-website.vercel.app/
 
 ## Features
 - Dark / light theme (remembers the visitor's choice, respects system preference)
@@ -14,7 +14,7 @@ Personal portfolio of a Frontend React Developer, built with **React 18 + Vite**
 ## Run locally
 ```bash
 npm install
-npm run dev       # http://localhost:5173/Sachidanand-Portfolio-website/
+npm run dev       # http://localhost:5173/
 npm run build     # production build in dist/
 ```
 
@@ -23,5 +23,5 @@ All text, links, projects, experience and skills live in [`src/data.js`](src/dat
 Images go in `src/assets/` and are imported at the top of that file.
 
 ## Deployment
-Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages.
-One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+- **Vercel (primary):** every push to `main` is built and deployed automatically to https://sachidanand-portfolio-website.vercel.app/
+- **GitHub Pages (optional):** `.github/workflows/deploy.yml` builds with `GITHUB_PAGES=true` so assets resolve under `/Sachidanand-Portfolio-website/`. One-time setup: **Settings → Pages → Source: GitHub Actions**.
